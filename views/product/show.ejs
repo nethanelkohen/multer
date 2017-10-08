@@ -3,14 +3,14 @@
 <% if (product) {%>
 <div class="row thumbnail" style="margin-top: 10px;">
 	<div class="col-md-6 well">
-		<h3 class=" well-sm">Product Title: "TODO: display title"</h3>
+		<h3 class=" well-sm">Product Title: <%= product.title%></h3>
 		<div class="well-sm">
-		<h4>Price  "TODO: display price"</h4>
-		<h4>Quantity "TODO: display quantity" </h4>
+		<h4>Price  <%= product.price%> </h4>
+		<h4>Quantity <%= product.quantity%> </h4>
 		</div>
 	</div>
 	<div class="col-md-6 text-center">
-		<img src="TODO: display image src"/>
+		<img src= <%= product.fileName%> />
 	</div>
 </div>
 
